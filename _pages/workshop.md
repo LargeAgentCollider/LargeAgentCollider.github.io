@@ -7,7 +7,7 @@ permalink: /workshop/
 ---
 
 
-# 2nd workshop on Robust Agent-Based Modeling at Scale
+# 2nd workshop on <br>Robust Agent-Based Modeling at Scale
 
 <img src="../images/workshop_banner.jpeg" alt="banner" width="800"/>
 
