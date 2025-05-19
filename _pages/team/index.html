@@ -36,7 +36,7 @@ permalink: /team/
 {% assign members = site.posts | where: 'category', 'postdoc' | sort: 'date' %}
 <div class="container-fluid justify-content-center">
     {% for member in members %}
-    <div class="row align-items-stretch">
+    <div class="align-items-stretch">
         <div class="card team-member-card h-100 text-center">
             <a href={{member.url}}>
                 <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
