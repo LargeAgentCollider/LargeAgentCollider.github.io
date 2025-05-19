@@ -81,10 +81,10 @@ permalink: /team/
 <div class="row flex-row flex-wrap">
     {% for member in members %}
     <div class="col-md-3 mb-4">
-        <div class="card team-member-card h-100">
+        <div class="card team-member-card h-100 text-center">
             <a href={{member.url}}>
                 <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
-                    class="card-img img-responsive img-thumbnail"
+                    class="card-img img-responsive img-thumbnail mx-auto d-block"
                     style="filter: grayscale(100%); max-width: 100px; max-height: 150px;"/>
             </a>
             <div class="card-body text-center">
