@@ -12,21 +12,18 @@ permalink: /team/
 
 <h2><a id="faculty"></a>Faculty</h2>
 {% assign members = site.posts | where: 'category', 'faculty' | sort: 'date' %}
-<div class="row mt-3">
+<div class="row flex-row flex-wrap">
     {% for member in members %}
-    <div class="card team-member-card">
-        <div class="col-md-2">
+    <div class="col-md-3 mb-4">
+        <div class="card team-member-card h-100">
             <a href={{member.url}}>
                 <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
                     class="card-img img-responsive img-thumbnail"
-                    style="filter: max-width: 100px;"/>
+                    style="max-width: height: auto;"/>
             </a>
-        </div>
-
-        <div class="col-md-10">
-            <div class="card-body">
-            <h4 class="card-title">{{ member.title }}</h4>
-            <p class="card-text">{{ member.role }}</p>
+            <div class="card-body text-center">
+                <h4 class="card-title">{{ member.title }}</h4>
+                <p class="card-text">{{ member.role }}</p>
             </div>
         </div>
     </div>
