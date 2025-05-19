@@ -12,9 +12,9 @@ permalink: /team/
 
 <h2><a id="faculty"></a>Faculty</h2>
 {% assign members = site.posts | where: 'category', 'faculty' | sort: 'date' %}
-<div class="row">
+<div class="wrapper justify-content-center">
     {% for member in members %}
-    <div class="col-md-3 mb-4">
+    <div>
         <div class="card team-member-card h-100 text-center">
             <a href={{member.url}}>
                 <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
@@ -27,10 +27,6 @@ permalink: /team/
             </div>
         </div>
     </div>
-
-    {% if forloop.index0 % 3 == 0 %}
-        </div><div class="row">
-    {% endif %}
     {% endfor %}
 </div>
 
@@ -60,14 +56,14 @@ permalink: /team/
 
 <h2><a id="student"></a>Students</h2>
 {% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
-<div class="row">
+<div class="wrapper justify-content-center">
     {% for member in members %}
-    <div class="col-md-3 mb-4">
+    <div>
         <div class="card team-member-card h-100 text-center">
             <a href={{member.url}}>
                 <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
                     class="card-img img-responsive img-thumbnail mx-auto"
-                    style="max-width: 100px; max-height: 100px;"/>
+                    style="max-width: 100px; max-height: 150px;"/>
             </a>
             <div class="card-body text-center">
                 <h4 class="card-title">{{ member.title }}</h4>
@@ -75,10 +71,6 @@ permalink: /team/
             </div>
         </div>
     </div>
-
-    {% if forloop.index0 % 4 == 3 %}
-        </div><div class="row">
-    {% endif %}
     {% endfor %}
 </div>
 
@@ -86,14 +78,14 @@ permalink: /team/
 
 <h2><a id="past"></a>Past Members</h2>
 {% assign members = site.posts | where: 'category', 'past' | sort: 'date' %}
-<div class="row flex-row flex-wrap">
+<div class="wrapper justify-content-center">
     {% for member in members %}
-    <div class="col-md-3 mb-4">
+    <div>
         <div class="card team-member-card h-100 text-center">
             <a href={{member.url}}>
                 <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
-                    class="card-img img-responsive img-thumbnail mx-auto d-block"
-                    style="filter: grayscale(100%); max-width: 100px; max-height: 100px;"/>
+                    class="card-img img-responsive img-thumbnail mx-auto"
+                    style="max-width: 100px; max-height: 150px;"/>
             </a>
             <div class="card-body text-center">
                 <h4 class="card-title">{{ member.title }}</h4>
