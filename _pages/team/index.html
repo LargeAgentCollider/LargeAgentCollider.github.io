@@ -34,9 +34,9 @@ permalink: /team/
 
 <h2><a id="postdoc"></a>Postdocs</h2>
 {% assign members = site.posts | where: 'category', 'postdoc' | sort: 'date' %}
-<div class="wrapper justify-content-center">
+<div class="row">
     {% for member in members %}
-    <div>
+    <div class="col-md-3 mb-4">
         <div class="card team-member-card h-100 text-center">
             <a href={{member.url}}>
                 <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
@@ -49,6 +49,10 @@ permalink: /team/
             </div>
         </div>
     </div>
+
+    {% if forloop.index0 % 4 == 3 %}
+        </div><div class="row">
+    {% endif %}
     {% endfor %}
 </div>
 
