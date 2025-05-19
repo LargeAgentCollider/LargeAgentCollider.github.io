@@ -1,3 +1,21 @@
+- date: 10/12/24
+  title: "Group members presenting at NeurIPS 2024"
+  tags:
+    - conference
+  content: Group members [Joel Dyer](https://largeagentcollider.github.io/team/joel), [Nicholas Bishop](https://largeagentcollider.github.io/team/nick), and [Daniel Jarne Ornia](https://largeagentcollider.github.io/team/dani) are in Vancouver to present their work on [causal abstraction learning](https://proceedings.neurips.cc/paper_files/paper/2024/hash/26b8e3dc3a21fcd660d80c63b767f324-Abstract-Conference.html) and [model exploration](https://openreview.net/forum?id=dPszKqLJGk#discussion) at NeurIPS 2024!
+
+- date: 15/07/24
+  title: "Group member wins Best Paper Award at UAI 2024"
+  tags:
+    - conference
+  content: Group member [Joel Dyer](https://largeagentcollider.github.io/team/joel) is awarded the <b>Best Paper Award</b> at [UAI 2024](https://www.auai.org/uai2024/) for his paper on [approximate Bayesian inference for stochastic simulation models](https://proceedings.mlr.press/v244/dyer24a.html)!
+
+- date: 15/07/24
+  title: "Group members presenting at UAI 2024"
+  tags:
+    - conference
+  content: Group members [Joel Dyer](https://largeagentcollider.github.io/team/joel) and [Nicholas Bishop](https://largeagentcollider.github.io/team/nick) are presenting their published papers on [approximate Bayesian inference](https://proceedings.mlr.press/v244/dyer24a.html) and [causally abstracted multi-armed bandits](https://proceedings.mlr.press/v244/zennaro24a.html) at [UAI 2024](https://www.auai.org/uai2024/)!
+
 - date: 27/05/24
   title: "LAC workshop"
   tags:
