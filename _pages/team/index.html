@@ -86,7 +86,7 @@ permalink: /team/
 <!-- Past Members -->
 
 <h2><a id="past"></a>Past Members</h2>
-{% assign members = site.posts | where: 'category', 'postdoc' | sort: 'date' %}
+{% assign members = site.posts | where: 'category', 'past' | sort: 'date' %}
 {% for member in members %}
 <div class="card team-member-card">
     <div class="row mt-3">
