@@ -34,7 +34,7 @@ permalink: /team/
 
 <h2><a id="postdoc"></a>Postdocs</h2>
 {% assign members = site.posts | where: 'category', 'postdoc' | sort: 'date' %}
-<div class="d-flex flex-wrap justify-content-center">
+<div class="container-fluid justify-content-center">
     {% for member in members %}
     <div class="col-md-3 mb-4 d-flex align-items-stretch">
         <div class="card team-member-card h-100 text-center">
