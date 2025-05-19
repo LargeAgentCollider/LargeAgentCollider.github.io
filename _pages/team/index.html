@@ -12,6 +12,7 @@ permalink: /team/
 
 <h2><a id="faculty"></a>Faculty</h2>
 {% assign members = site.posts | where: 'category', 'faculty' | sort: 'date' %}
+<div class="row">
     {% for member in members %}
     <div class="col-md-3 mb-4">
         <div class="card team-member-card h-100 text-center">
@@ -63,6 +64,7 @@ permalink: /team/
 
 <h2><a id="student"></a>Students</h2>
 {% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
+<div class="row">
     {% for member in members %}
     <div class="col-md-3 mb-4">
         <div class="card team-member-card h-100 text-center">
